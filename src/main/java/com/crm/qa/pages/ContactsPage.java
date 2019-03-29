@@ -170,10 +170,11 @@ public class ContactsPage extends TestBase
 		TestUtil.scrollDown(1000);
 		
 		TestUtil.flashElement(contactImage);
-		contactImage.sendKeys("C:\\Users\\HK-SONY\\Desktop\\Capture.PNG");
+		contactImage.sendKeys("C:\\Users\\HK-SONY\\Selenium_Eclipse_Workspace\\FreeCRM_NaveenAutomation_POM\\src\\main\\java\\com\\crm\\qa\\testdata\\POM.PNG");
 
 		TestUtil.flashElement(saveButton);
 		saveButton.click();
+		
 			
 	}
 

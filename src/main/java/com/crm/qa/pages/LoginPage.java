@@ -42,7 +42,7 @@ public class LoginPage extends TestBase
 		return bellIcon.isDisplayed();
 	}
 	
-//Actions which needs to be perfomed on LoginPage	
+//Actions which needs to be performed on LoginPage	
 	
 	public HomePage login(String email, String pwd) throws InterruptedException
 	{

@@ -22,6 +22,7 @@ public class HomePage extends TestBase {
 	
 	
 	
+	
 // All these 4 elements will be initialized 	
 	public HomePage()
 	{
@@ -56,6 +57,7 @@ public class HomePage extends TestBase {
 	public boolean verifyCorrectUsernameLabel()
 	{
 		return usernameLabel.isDisplayed();
+		
 	}
 		
 }
