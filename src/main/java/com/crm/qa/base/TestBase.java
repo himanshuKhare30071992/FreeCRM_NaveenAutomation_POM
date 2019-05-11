@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+
 import com.crm.qa.utilities.TestUtil;
 import com.crm.qa.utilities.WebEventListener;
 
@@ -22,6 +23,7 @@ public class TestBase {
 	
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	
 	
 	public TestBase()
 	{
@@ -35,9 +37,11 @@ public class TestBase {
 				e.printStackTrace();
 			}
 
+		System.out.println("= Config File Location = "+fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public static void init()
@@ -71,6 +75,11 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(url);
 	}
+
 	
+	
+	// #NOTE: This is the method which will take the parameter at run time from user.
+ 	
+		
 	
 }

@@ -28,6 +28,12 @@ public class LoginPageTest extends TestBase
 		lp = new LoginPage();
 	}
 	
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.close();
+	}
+	
 	
 	@Test(priority=1)
 	public void validateLoginPageTitle()
@@ -55,10 +61,6 @@ public class LoginPageTest extends TestBase
 	}
 
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.close();
-	}
+	
 	
 }
